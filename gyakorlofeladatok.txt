@@ -1,0 +1,29 @@
+For ciklus gyakorlás: 
+
+for (var i=0; i<Gamers.length;i++){
+  Gamers[i].age = Gamers[i].age + 10;
+  Gamers[i].loggedIn = Gamers[i].country=='HU';
+}
+
+For..in ciklus gyakorlás:
+
+var allGoals = 0;
+  for (var k in players) {
+    if (players[k].goals>0) {
+      players[k].ball = '/img/ball.png';
+    };
+    if (players[k].caps > 50) {
+      players[k].veteran = true;
+    };
+    allGoals += parseInt(players[k].goals);
+  };
+
+
+While ciklus gyakorlás:
+
+var i = 0;
+while(i<5){
+  var valami = {actorId:'actor+i',turnstart:1,type:i+1,startDelay:i*2000};
+  Ghosts.push(valami);
+  i++;
+}
